@@ -1,6 +1,12 @@
 @charset "utf-8";
-@import url(./font.css);
-@import url(./reset.css);
+@import url(reset.css);
+@import url(font.css);
+@import url(m_header_footer.css);
+
+body {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 /* 헤더 영역 - 로고와 tnb */
     header {
@@ -10,9 +16,6 @@
         width: 100%;
         margin-bottom: 20px;
         position: relative;
-    }
-    div.header div.mobile {
-        display: none;
     }
     div.header h1 {
         text-align: center;
@@ -179,14 +182,14 @@
     }
 
 /* depth03 방향 변경 */
-    ul.depth01 > li:nth-child(6) > ul.depth02 > li > ul.depth03 {
+/* ul.depth01 > li:nth-child(6) > ul.depth02 > li > ul.depth03 {
     left: -230px;
-    }
+} */
 
 /* breadcrumb */
-    div.container.my-5 {
+div.container.my-5 {
     padding: 0 20px;
-    }
-    div.open > span.pc_blind {
+}
+div.open > span.pc_blind {
     display: none;
-    }
+}
